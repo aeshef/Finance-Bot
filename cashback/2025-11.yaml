@@ -1,0 +1,53 @@
+month: "2025-11"
+rules:
+  - id: "groceries-5"
+    title: "Супермаркеты 5%"
+    validity: { start: 2025-11-01, end: 2025-11-30 }
+    reward:
+      kind: "percent"
+      value: 5.0
+      cap: { period: "monthly", amount: 2000.0, currency: "RUB" }
+    conditions:
+      categories: ["Еда"]
+      mcc: [5411, 5422]
+      merchants: ["Перекресток", "Пятерочка", "Лента", "Магнит"]
+      tags: ["groceries"]
+    applies_to:
+      accounts: ["Т-Банк", "Альфа Карта"]
+    priority: 50
+    stackable: false
+
+  - id: "transport-10"
+    title: "Транспорт 10%"
+    validity: { start: 2025-11-01, end: 2025-11-30 }
+    reward:
+      kind: "percent"
+      value: 10.0
+      cap: { period: "monthly", amount: 1500.0, currency: "RUB" }
+    conditions:
+      categories: ["Транспорт"]
+      mcc: [4111, 4789]
+      merchants: ["Тройка", "Подорожник", "Мосгортранс"]
+      tags: ["transport"]
+    applies_to:
+      accounts: ["Т-Банк"]
+    priority: 40
+    stackable: false
+
+  - id: "promo-merchant-x"
+    title: "Промо в магазине X 15%"
+    validity: { start: 2025-11-10, end: 2025-11-20 }
+    reward:
+      kind: "percent"
+      value: 15.0
+      cap: { period: "monthly", amount: 1000.0, currency: "RUB" }
+    conditions:
+      categories: []
+      mcc: []
+      merchants: ["Shop X", "Шоп Икс"]
+      tags: ["promo"]
+    applies_to:
+      accounts: ["Т-Банк", "Альфа Карта"]
+    priority: 10
+    stackable: false
+

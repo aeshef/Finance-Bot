@@ -1,0 +1,102 @@
+base:
+  timezone: "Europe/Moscow"
+  base_currency: "RUB"
+  reminder_time: "21:00"
+
+tinkoff:
+  api_token: ""  # add to .env instead for security
+
+accounts:
+  - name: "Ozon Банк"
+    type: "card"
+    currency: "RUB"
+    balance: 0.00
+    balance_as_of: "2025-10-31"
+  - name: "Альфа-Банк"
+    type: "card"
+    currency: "RUB"
+    balance: 534.68
+    balance_as_of: "2025-10-31"
+  - name: "Т-Банк"
+    type: "card"
+    currency: "RUB"
+    balance: 0.00
+    balance_as_of: "2025-10-31"
+  - name: "Сбер #1"
+    type: "card"
+    currency: "RUB"
+    balance: 1356.99
+    balance_as_of: "2025-10-31"
+  - name: "ВТБ"
+    type: "card"
+    currency: "RUB"
+    balance: 0.00
+    balance_as_of: "2025-10-31"
+  - name: "Вайлдберис Банк"
+    type: "card"
+    currency: "RUB"
+    balance: 0.00
+    balance_as_of: "2025-10-31"
+  - name: "Яндекс Банк"
+    type: "card"
+    currency: "RUB"
+    balance: 1434.25
+    balance_as_of: "2025-10-31"
+
+# Debts (receivables = people owe me)
+debts:
+  receivables:
+    - counterparty: "Витя"
+      amount: 2100.00
+      currency: "RUB"
+      note: "Festa&"
+    - counterparty: "Платон"
+      amount: 13800.00
+      currency: "RUB"
+      note: "Festa&"
+    - counterparty: "Илья"
+      amount: 2800.00
+      currency: "RUB"
+      note: "Festa&"
+  payables: []
+
+# Crypto assets as per-asset external accounts
+crypto:
+  wallets:
+    - name: "ByBit"
+      assets:
+        - symbol: "BTC"
+          amount: 0.00002
+        - symbol: "USDT"
+          amount: 0.1202
+    - name: "UniSwap"
+      assets:
+        - symbol: "ETH"
+          amount: 0.004
+        - symbol: "WBTC"
+          amount: 0.0009
+    - name: "MetaMask"
+      assets:
+        - symbol: "USDT"
+          amount: 8.977
+        - symbol: "ETH"
+          amount: 0.0009
+
+categories:
+  - "Транспорт/Такси"
+  - "Транспорт/Проезд"
+  - "Еда/Продукты"
+  - "Еда/Вне дома"
+  - "Дом/ЖКХ"
+  - "Дом/Быт"
+  - "Дом/Ремонт"
+  - "Здоровье"
+  - "Одежда"
+  - "ИТ"
+  - "Развитие"
+  - "Развлечения"
+  - "Подарки"
+  - "Алкоголь и Табак"
+  - "Подписки"
+  - "Комиссии"
+  - "Прочее"
