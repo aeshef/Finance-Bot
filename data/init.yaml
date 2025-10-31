@@ -20,9 +20,9 @@ accounts:
   - name: "Т-Банк"
     type: "card"
     currency: "RUB"
-    balance: 0.00
+    balance: 2800.00
     balance_as_of: "2025-10-31"
-  - name: "Сбер #1"
+  - name: "Сбер"
     type: "card"
     currency: "RUB"
     balance: 1356.99
@@ -52,10 +52,6 @@ debts:
       note: "Festa&"
     - counterparty: "Платон"
       amount: 13800.00
-      currency: "RUB"
-      note: "Festa&"
-    - counterparty: "Илья"
-      amount: 2800.00
       currency: "RUB"
       note: "Festa&"
   payables: []
